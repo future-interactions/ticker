@@ -1,0 +1,26 @@
+#tickerContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+ top: 0px;
+ left: 0px;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  line-height: 100vh;
+  background-color: gold;
+  font-size: 100vh;
+  color: black;
+}
+
+#tickerMain {
+  display: flex;
+  /*  hides the orginal seed for the ticker */
+  top: 100vh;
+  flex-wrap: nowrap;
+  height: inherit;
+  position: absolute;
+  white-space: nowrap;
+  /*  visibility:hidden; */
+}
