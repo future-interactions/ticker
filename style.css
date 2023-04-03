@@ -4,23 +4,59 @@
   width: 100vw;
  top: 0px;
  left: 0px;
-  height: 100vh;
   position: absolute;
   overflow: hidden;
   color: rgb(255, 255, 255);
-  line-height: 100vh;
-  background-color: gold;
-  font-size: 100vh;
-  color: black;
+  background-color: rgb(0, 0, 0);
+height: 100vh;
 }
 
-#tickerMain {
+#tickerMain1 {
   display: flex;
   /*  hides the orginal seed for the ticker */
-  top: 100vh;
+  top: -50vh;
+  height: 25vh;
+  line-height: 25vh;
+  font-size: 10vh;
+  color: rgb(255, 255, 255);
   flex-wrap: nowrap;
-  height: inherit;
   position: absolute;
   white-space: nowrap;
-  /*  visibility:hidden; */
+}
+
+#tickerMain2 {
+  display: flex;
+  /*  hides the orginal seed for the ticker */
+  top: -50vh;
+  height: 25vh;
+  line-height: 25vh;
+  font-size: 15vh;
+  color: rgb(255, 244, 244);
+  flex-wrap: nowrap;
+  position: absolute;
+  white-space: nowrap;
+}
+#tickerMain3 {
+  display: flex;
+  /*  hides the orginal seed for the ticker */
+  top: -50vh;
+  height: 25vh;
+  line-height: 25vh;
+  font-size: 5vh;
+  color: rgb(255, 255, 255);
+  flex-wrap: nowrap;
+  position: absolute;
+  white-space: nowrap;
+}
+#tickerMain4 {
+  display: flex;
+  /*  hides the orginal seed for the ticker */
+  top: -50vh;
+  height: 25vh;
+  line-height: 25vh;
+  font-size: 25vh;
+  color: rgb(255, 255, 255);
+  flex-wrap: nowrap;
+  position: absolute;
+  white-space: nowrap;
 }
