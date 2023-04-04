@@ -34,6 +34,7 @@ addEventListener("load", function () {
     tickerList1[i] = node.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList1[i]);
     // tickerList1[i].style.backgroundColor = "hsl(" + i * 10 + ", 100%, 50%)";
+    tickerList1[i].style.backgroundColor = "white";
     startPos1[i] = i * mainLength1;
     tickerList1[i].style.left = startPos1[i];
     tickerList1[i].style.top = "0px";
@@ -76,7 +77,7 @@ addEventListener("load", function () {
     tickerList4[i].style.top = "75vh";
   }
 
-  setInterval(moveText, 1);
+  setInterval(moveText, 80);
   setInterval(moveText2, 30);
   setInterval(moveText3, 10);
   setInterval(moveText4, 2);
