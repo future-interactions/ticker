@@ -33,7 +33,7 @@ addEventListener("load", function () {
     const node = document.getElementById("tickerMain1");
     tickerList1[i] = node.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList1[i]);
-    tickerList1[i].style.backgroundColor = "hsl(" + i * 6 + ", 100%, 50%)";
+    tickerList1[i].style.backgroundColor = "hsl(" + i * 10 + ", 100%, 50%)";
     startPos1[i] = i * mainLength1;
     tickerList1[i].style.left = startPos1[i];
     tickerList1[i].style.top = "0px";
@@ -79,7 +79,7 @@ addEventListener("load", function () {
   setInterval(moveText, 1);
   setInterval(moveText2, 30);
   setInterval(moveText3, 10);
-  setInterval(moveText4, 5);
+  setInterval(moveText4, 2);
 
   function moveText() {
     for (let i = 0; i < numOfTickers1; i++) {
@@ -117,7 +117,7 @@ addEventListener("load", function () {
       } else if (startPos3[i] + mainLength3 == 0 && i == 0) {
         startPos3[i] = startPos3[numOfTickers3 - 1] + mainLength3;
       } else if (startPos3[i] + mainLength3 == 0 && i > 0) {
-        startPos3[i] = startPos3[i - 1] + mainLength3 - 1;
+        startPos3[i] = startPos3[i - 1] + mainLength3;
       }
     }
   }
