@@ -33,7 +33,7 @@ addEventListener("load", function () {
     const node = document.getElementById("tickerMain1");
     tickerList1[i] = node.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList1[i]);
-    tickerList1[i].style.backgroundColor = "hsl(" + i * 10 + ", 100%, 50%)";
+    // tickerList1[i].style.backgroundColor = "hsl(" + i * 10 + ", 100%, 50%)";
     startPos1[i] = i * mainLength1;
     tickerList1[i].style.left = startPos1[i];
     tickerList1[i].style.top = "0px";
@@ -45,7 +45,7 @@ addEventListener("load", function () {
     const node2 = document.getElementById("tickerMain2");
     tickerList2[i] = node2.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList2[i]);
-    tickerList2[i].style.backgroundColor = "hsl(" + i *9 + ", 100%, 50%)";
+    // tickerList2[i].style.backgroundColor = "hsl(" + i *9 + ", 100%, 50%)";
     startPos2[i] = i * mainLength2;
     tickerList2[i].style.left = startPos2[i];
     tickerList2[i].style.top = "25vh";
@@ -57,7 +57,7 @@ addEventListener("load", function () {
     const node3 = document.getElementById("tickerMain3");
     tickerList3[i] = node3.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList3[i]);
-    tickerList3[i].style.backgroundColor = "hsl(" + i * 3 + ", 100%, 50%)";
+    // tickerList3[i].style.backgroundColor = "hsl(" + i * 3 + ", 100%, 50%)";
     startPos3[i] = i * mainLength3;
     tickerList3[i].style.left = startPos3[i];
     tickerList3[i].style.top = "50vh";
@@ -70,7 +70,7 @@ addEventListener("load", function () {
     const node4 = document.getElementById("tickerMain4");
     tickerList4[i] = node4.cloneNode(true);
     document.getElementById("tickerContainer").appendChild(tickerList4[i]);
-    tickerList4[i].style.backgroundColor = "hsl(" + i * 12 + ", 100%, 50%)";
+    // tickerList4[i].style.backgroundColor = "hsl(" + i * 12 + ", 100%, 50%)";
     startPos4[i] = i * mainLength4;
     tickerList4[i].style.left = startPos4[i];
     tickerList4[i].style.top = "75vh";
