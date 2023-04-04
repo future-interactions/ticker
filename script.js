@@ -77,6 +77,9 @@ addEventListener("load", function () {
   }
 
   setInterval(moveText, 1);
+  setInterval(moveText2, 30);
+  setInterval(moveText3, 10);
+  setInterval(moveText4, 5);
 
   function moveText() {
     for (let i = 0; i < numOfTickers1; i++) {
@@ -84,47 +87,54 @@ addEventListener("load", function () {
         startPos1[i]--;
         tickerList1[i].style.left = startPos1[i] + "px";
       } else if (startPos1[i] + mainLength1 == 0 && i == 0) {
-        startPos1[i] = startPos1[numOfTickers1 - 1] + mainLength1 - 1;
+        startPos1[i] = startPos1[numOfTickers1 - 1] + mainLength1;
       } else if (startPos1[i] + mainLength1 == 0 && i > 0) {
-        startPos1[i] = startPos1[i - 1] + mainLength1 - 1;
+        startPos1[i] = startPos1[i - 1] + mainLength1 ;
       }
     }
+  }
+  
     //2
+    function moveText2() {
     for (let i = 0; i < numOfTickers2; i++) {
       if (startPos2[i] + mainLength2 > 0) {
         startPos2[i]--;
         tickerList2[i].style.left = startPos2[i] + "px";
       } else if (startPos2[i] + mainLength2 == 0 && i == 0) {
-        startPos2[i] = startPos2[numOfTickers2 - 1] + mainLength2 - 1;
+        startPos2[i] = startPos2[numOfTickers2 - 1] + mainLength2;
       } else if (startPos2[i] + mainLength2 == 0 && i > 0) {
-        startPos2[i] = startPos2[i - 1] + mainLength2 - 1;
+        startPos2[i] = startPos2[i - 1] + mainLength2;
       }
     }
+  }
 
     //3
+    function moveText3() {
     for (let i = 0; i < numOfTickers3; i++) {
       if (startPos3[i] + mainLength3 > 0) {
         startPos3[i]--;
         tickerList3[i].style.left = startPos3[i] + "px";
       } else if (startPos3[i] + mainLength3 == 0 && i == 0) {
-        startPos3[i] = startPos3[numOfTickers3 - 1] + mainLength3 - 1;
+        startPos3[i] = startPos3[numOfTickers3 - 1] + mainLength3;
       } else if (startPos3[i] + mainLength3 == 0 && i > 0) {
         startPos3[i] = startPos3[i - 1] + mainLength3 - 1;
       }
     }
-
+  }
     //4
+    function moveText4() {
     for (let i = 0; i < numOfTickers4; i++) {
       if (startPos4[i] + mainLength4 > 0) {
         startPos4[i]--;
         tickerList4[i].style.left = startPos4[i] + "px";
       } else if (startPos4[i] + mainLength4== 0 && i == 0) {
-        startPos4[i] = startPos4[numOfTickers4 - 1] + mainLength4 - 1;
+        startPos4[i] = startPos4[numOfTickers4 - 1] + mainLength4;
       } else if (startPos4[i] + mainLength4 == 0 && i > 0) {
         startPos4[i] = startPos4[i - 1] + mainLength4 - 1;
       }
     }
   }
+  
   
 });
 
