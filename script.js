@@ -77,7 +77,7 @@ addEventListener("load", function () {
     tickerList4[i].style.top = "75vh";
   }
 
-  setInterval(moveText, 80);
+  setInterval(moveText, 16);
   setInterval(moveText2, 30);
   setInterval(moveText3, 10);
   setInterval(moveText4, 2);
